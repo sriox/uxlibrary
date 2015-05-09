@@ -1,0 +1,514 @@
+<br/>
+<my-selector></my-selector>
+<br/>
+<div class="row" ng-show="!!segment.id && !!topic.id">
+    <div class="col-xs-12 text-center my-label">
+        <h4>Ruta <i class="fa fa-arrow-right"></i> {{ segment.name }} - {{ topic.name }}</h4>
+    </div>
+</div>
+<div class="row" ng-show="!!segment.id && !!topic.id">
+    <div class="col-xs-12">
+        <img class="col-xs-12 img-thumbnail" ng-src="images/route_{{segment.id}}_{{topic.id}}.png" alt=""/>
+    </div>
+</div>
+
+
+<div ng-show="segment.id == 1 && topic.id == 1">
+    <div class="row">
+        <div class="col-xs-12 text-center">
+            <select name="" id="" ng-model="ruta">
+                <option value="1" selected>Ruta 1</option>
+                <option value="2">Ruta 2</option>
+                <option value="3">Ruta 3</option>
+            </select>
+        </div>
+    </div>
+<div class="row" ng-show="ruta == 1">
+    <div class="col-xs-12">
+        <div class="row">
+            <div class="col-xs-12 route-title text-center" style="background-color: #C0504D">Ruta 1</div>
+        </div>
+        <br/>
+        <div class="row">
+            <div class="col-xs-1"><span class="badge">1</span></div>
+            <div class="col-xs-9">
+                <div class="row"><div class="col-xs-3">Libreria:</div><div class="col-xs-9">San Pablo</div></div>
+                <div class="row"><div class="col-xs-3">Dir: </div><div class="col-xs-9"><span class="small">Cr46 22 A-90</span></div></div>
+                <div class="row"><div class="col-xs-3">Libro:</div><div class="col-xs-9">Fuenteovejuna</div></div>
+                <div class="row"><div class="col-xs-3">Autor:</div><div class="col-xs-9">Lope de Vega</div></div>
+                <div class="row"><div class="col-xs-3">Precio:</div><div class="col-xs-9">$ 18.950</div></div>
+            </div>
+            <div class="col-xs-2">
+                <div class="thumbnail"><img src="images/fuenteovejuna.png" alt=""/></div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-xs-1"><span class="badge">2</span></div>
+            <div class="col-xs-9">
+                <div class="row"><div class="col-xs-3">Libreria:</div><div class="col-xs-9">Nacional S.A.</div></div>
+                <div class="row"><div class="col-xs-3">Dir: </div><div class="col-xs-9"><span class="small">Cr15 123-30 L-1-146</span></div></div>
+                <div class="row"><div class="col-xs-3">Libro:</div><div class="col-xs-9">Dona Pito</div></div>
+                <div class="row"><div class="col-xs-3">Autor:</div><div class="col-xs-9">Gloria Fuertes</div></div>
+                <div class="row"><div class="col-xs-3">Precio:</div><div class="col-xs-9">$ 25.950</div></div>
+            </div>
+            <div class="col-xs-2">
+                <div class="thumbnail"><img src="images/donapito.png" alt=""/></div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-xs-1"><span class="badge">3</span></div>
+            <div class="col-xs-9">
+                <div class="row"><div class="col-xs-3">Libreria:</div><div class="col-xs-9">Maxilibros</div></div>
+                <div class="row"><div class="col-xs-3">Dir: </div><div class="col-xs-9"><span class="small">Cr8 A 15-63 L-135</span></div></div>
+                <div class="row"><div class="col-xs-3">Libro:</div><div class="col-xs-9">Yo voy sonando caminos</div></div>
+                <div class="row"><div class="col-xs-3">Autor:</div><div class="col-xs-9">Antonio Machado</div></div>
+                <div class="row"><div class="col-xs-3">Precio:</div><div class="col-xs-9">$ 23.200</div></div>
+            </div>
+            <div class="col-xs-2">
+                <div class="thumbnail"><img src="images/caminos.png" alt=""/></div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-xs-1"><span class="badge">4</span></div>
+            <div class="col-xs-9">
+                <div class="row"><div class="col-xs-3">Libreria:</div><div class="col-xs-9">Temis</div></div>
+                <div class="row"><div class="col-xs-3">Dir: </div><div class="col-xs-9"><span class="small">Cl 12 B 6-45</span></div></div>
+                <div class="row"><div class="col-xs-3">Libro:</div><div class="col-xs-9">La isla afortunada</div></div>
+                <div class="row"><div class="col-xs-3">Autor:</div><div class="col-xs-9">Humberto Zarrilli</div></div>
+                <div class="row"><div class="col-xs-3">Precio:</div><div class="col-xs-9">$ 28.200</div></div>
+            </div>
+            <div class="col-xs-2">
+                <div class="thumbnail"><img src="images/humberto_zarrilli.png" alt=""/></div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="row" ng-show="ruta == 2">
+    <div class="col-xs-12">
+        <div class="row">
+            <div class="col-xs-12 route-title text-center" style="background-color: #9BBB59">Ruta 2</div>
+        </div>
+        <br/>
+        <div class="row">
+            <div class="col-xs-1"><span class="badge">1</span></div>
+            <div class="col-xs-9">
+                <div class="row"><div class="col-xs-3">Libreria:</div><div class="col-xs-9">Maxilibros</div></div>
+                <div class="row"><div class="col-xs-3">Dir: </div><div class="col-xs-9"><span class="small">Cr46 22 A-90</span></div></div>
+                <div class="row"><div class="col-xs-3">Libro:</div><div class="col-xs-9">Fuenteovejuna</div></div>
+                <div class="row"><div class="col-xs-3">Autor:</div><div class="col-xs-9">Vladimir Nabokov</div></div>
+                <div class="row"><div class="col-xs-3">Precio:</div><div class="col-xs-9">$ 18.950</div></div>
+            </div>
+            <div class="col-xs-2">
+                <div class="thumbnail"><img src="images/caminos.png" alt=""/></div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-xs-1"><span class="badge">2</span></div>
+            <div class="col-xs-9">
+                <div class="row"><div class="col-xs-3">Libreria:</div><div class="col-xs-9">Temis</div></div>
+                <div class="row"><div class="col-xs-3">Dir: </div><div class="col-xs-9"><span class="small">Cr15 123-30 L-1-146</span></div></div>
+                <div class="row"><div class="col-xs-3">Libro:</div><div class="col-xs-9">Dona Pito</div></div>
+                <div class="row"><div class="col-xs-3">Autor:</div><div class="col-xs-9">F. Scott Fitzgerald</div></div>
+                <div class="row"><div class="col-xs-3">Precio:</div><div class="col-xs-9">$ 25.950</div></div>
+            </div>
+            <div class="col-xs-2">
+                <div class="thumbnail"><img src="images/humberto_zarrilli.png" alt=""/></div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-xs-1"><span class="badge">3</span></div>
+            <div class="col-xs-9">
+                <div class="row"><div class="col-xs-3">Libreria:</div><div class="col-xs-9">San Pablo</div></div>
+                <div class="row"><div class="col-xs-3">Dir: </div><div class="col-xs-9"><span class="small">Cr8 A 15-63 L-135</span></div></div>
+                <div class="row"><div class="col-xs-3">Libro:</div><div class="col-xs-9">Yo voy sonando caminos</div></div>
+                <div class="row"><div class="col-xs-3">Autor:</div><div class="col-xs-9">Marcel Proust</div></div>
+                <div class="row"><div class="col-xs-3">Precio:</div><div class="col-xs-9">$ 23.200</div></div>
+            </div>
+            <div class="col-xs-2">
+                <div class="thumbnail"><img src="images/fuenteovejuna.png" alt=""/></div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-xs-1"><span class="badge">4</span></div>
+            <div class="col-xs-9">
+                <div class="row"><div class="col-xs-3">Libreria:</div><div class="col-xs-9">Nacional S.A.</div></div>
+                <div class="row"><div class="col-xs-3">Dir: </div><div class="col-xs-9"><span class="small">Cl 12 B 6-45</span></div></div>
+                <div class="row"><div class="col-xs-3">Libro:</div><div class="col-xs-9">La isla afortunada</div></div>
+                <div class="row"><div class="col-xs-3">Autor:</div><div class="col-xs-9">William Faulkner</div></div>
+                <div class="row"><div class="col-xs-3">Precio:</div><div class="col-xs-9">$ 28.200</div></div>
+            </div>
+            <div class="col-xs-2">
+                <div class="thumbnail"><img src="images/humberto_zarrilli.png" alt=""/></div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-xs-1"><span class="badge">5</span></div>
+            <div class="col-xs-9">
+                <div class="row"><div class="col-xs-3">Libreria:</div><div class="col-xs-9">Temis</div></div>
+                <div class="row"><div class="col-xs-3">Dir: </div><div class="col-xs-9"><span class="small">Cl 12 B 6-45</span></div></div>
+                <div class="row"><div class="col-xs-3">Libro:</div><div class="col-xs-9">La isla afortunada</div></div>
+                <div class="row"><div class="col-xs-3">Autor:</div><div class="col-xs-9">Virginia Woolf</div></div>
+                <div class="row"><div class="col-xs-3">Precio:</div><div class="col-xs-9">$ 28.200</div></div>
+            </div>
+            <div class="col-xs-2">
+                <div class="thumbnail"><img src="images/donapito.png" alt=""/></div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="row" ng-show="ruta == 3">
+    <div class="col-xs-12">
+        <div class="row">
+            <div class="col-xs-12 route-title text-center" style="background-color: #4F81BD">Ruta 3</div>
+        </div>
+        <br/>
+        <div class="row">
+            <div class="col-xs-1"><span class="badge">1</span></div>
+            <div class="col-xs-9">
+                <div class="row"><div class="col-xs-3">Libreria:</div><div class="col-xs-9">Maxilibros</div></div>
+                <div class="row"><div class="col-xs-3">Dir: </div><div class="col-xs-9"><span class="small">Cr46 22 A-90</span></div></div>
+                <div class="row"><div class="col-xs-3">Libro:</div><div class="col-xs-9">Fuenteovejuna</div></div>
+                <div class="row"><div class="col-xs-3">Autor:</div><div class="col-xs-9">Jorge Luis Borges</div></div>
+                <div class="row"><div class="col-xs-3">Precio:</div><div class="col-xs-9">$ 18.950</div></div>
+            </div>
+            <div class="col-xs-2">
+                <div class="thumbnail"><img src="images/fuenteovejuna.png" alt=""/></div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-xs-1"><span class="badge">2</span></div>
+            <div class="col-xs-9">
+                <div class="row"><div class="col-xs-3">Libreria:</div><div class="col-xs-9">Temis</div></div>
+                <div class="row"><div class="col-xs-3">Dir: </div><div class="col-xs-9"><span class="small">Cr15 123-30 L-1-146</span></div></div>
+                <div class="row"><div class="col-xs-3">Libro:</div><div class="col-xs-9">Dona Pito</div></div>
+                <div class="row"><div class="col-xs-3">Autor:</div><div class="col-xs-9">Mario Vargas Llosa</div></div>
+                <div class="row"><div class="col-xs-3">Precio:</div><div class="col-xs-9">$ 25.950</div></div>
+            </div>
+            <div class="col-xs-2">
+                <div class="thumbnail"><img src="images/caminos.png" alt=""/></div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-xs-1"><span class="badge">3</span></div>
+            <div class="col-xs-9">
+                <div class="row"><div class="col-xs-3">Libreria:</div><div class="col-xs-9">San Pablo</div></div>
+                <div class="row"><div class="col-xs-3">Dir: </div><div class="col-xs-9"><span class="small">Cr8 A 15-63 L-135</span></div></div>
+                <div class="row"><div class="col-xs-3">Libro:</div><div class="col-xs-9">Yo voy sonando caminos</div></div>
+                <div class="row"><div class="col-xs-3">Autor:</div><div class="col-xs-9">Julio Cortazar</div></div>
+                <div class="row"><div class="col-xs-3">Precio:</div><div class="col-xs-9">$ 23.200</div></div>
+            </div>
+            <div class="col-xs-2">
+                <div class="thumbnail"><img src="images/humberto_zarrilli.png" alt=""/></div>
+            </div>
+        </div>
+    </div>
+</div>
+<div>
+    <div class="row">
+        <div class="col-xs-12 text-center"><h3>Comentarios</h3></div>
+    </div>
+    <div>
+        <div class="row">
+            <div class="col-xs-12"><i class="fa fa-user"></i> <span class="text-info">Lector Nocturno</span></div>
+        </div>
+        <div class="row">
+            <div class="col-xs-10 col-xs-offset-1"><span>Yo fue aqui despues un consejo de una mia amiga. Es pequena, pero muy rica an titulos. Para mi fue fundamental para adquirir libros muy famosos en lengua materna espanola. Compre 4 libros, 1 tambien por mi hija. Muchas gracias por el calor y el ayuda</span></div>
+        </div>
+    </div>
+    <div>
+        <div class="row">
+            <div class="col-xs-12"><i class="fa fa-user"></i> <span class="text-info">Chica fantastica</span></div>
+        </div>
+        <div class="row">
+            <div class="col-xs-10 col-xs-offset-1"><span>Si por mi fuera me llevaria un colchon, una almohadita, una cobija y me instalaria a vivir alli. No hay como ser atendido por expertos libreros, gente que sabe de letras, autores y tendencias. Servicios especiales a clubes de lectura, oferta variadisima, hora del cuento para ninos y millones de letras por leer.</span></div>
+        </div>
+    </div>
+    <div>
+        <div class="row">
+            <div class="col-xs-12"><i class="fa fa-user"></i> <span class="text-info">El libromano</span></div>
+        </div>
+        <div class="row">
+            <div class="col-xs-10 col-xs-offset-1"><span>No solo es bueno por que hay gran variedad de libros, es una libreria pequena. Aun así... asi como tambien por la tranquilidad que se encuentra alli donde se puede pasar un buen rato dedicado a la lectura.</span></div>
+        </div>
+    </div>
+</div>
+   <!-- <div class="row">
+        <div class="col-xs-4">
+            <div class="row">
+                <div class="col-xs-12 text-center route-title" style="background-color: #C0504D">Ruta 1</div>
+            </div>
+            <br/>
+            <div class="row">
+                <div class="col-xs-10 col-xs-offset-1">
+                    <div class="row">
+                        <div class="col-xs-2">1</div>
+                        <div class="col-xs-10">asdasdsad</div>
+                    </div>
+                    <div class="row">
+                        <div class="col-xs-2">2</div>
+                        <div class="col-xs-10">asdasdsad</div>
+                    </div>
+                    <div class="row">
+                        <div class="col-xs-2">3</div>
+                        <div class="col-xs-10">asdasdsad</div>
+                    </div>
+                    <div class="row">
+                        <div class="col-xs-2">4</div>
+                        <div class="col-xs-10">asdasdsad</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col-xs-4">
+            <div class="row">
+                <div class="col-xs-12 route-title text-center" style="background-color: #9BBB59">Ruta 2</div>
+            </div>
+            <br/>
+            <div class="row">
+                <div class="col-xs-10 col-xs-offset-1">
+                    <div class="row">
+                        <div class="col-xs-12 text-center"><span class="badge">1</span></div>
+                    </div>
+                    <div class="row">
+                        <div class="col-xs-12">Libreria San Pablo</div>
+                    </div>
+                    <div class="row">
+                        <div class="col-xs-12 text-center"><span class="badge">2</span></div>
+                    </div>
+                    <div class="row">
+                        <div class="col-xs-12">Librería Nacional S.A.</div>
+                    </div>
+                    <div class="row">
+                        <div class="col-xs-12 text-center"><span class="badge">3</span></div>
+                    </div>
+                    <div class="row">
+                        <div class="col-xs-12">Librería Maxilibros</div>
+                    </div>
+                    <div class="row">
+                        <div class="col-xs-12 text-center">4</div>
+                    </div>
+                    <div class="row">
+                        <div class="col-xs-12">Librería Temis</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col-xs-4">
+            <div class="row">
+                <div class="col-xs-12 route-title text-center" style="background-color: #4F81BD">Ruta 3</div>
+            </div>
+            <br/>
+            <div class="row">
+                <div class="col-xs-10 col-xs-offset-1">
+                    <div class="row">
+                        <div class="col-xs-2">1</div>
+                        <div class="col-xs-10">asdasdsad</div>
+                    </div>
+                    <div class="row">
+                        <div class="col-xs-2">2</div>
+                        <div class="col-xs-10">asdasdsad</div>
+                    </div>
+                    <div class="row">
+                        <div class="col-xs-2">3</div>
+                        <div class="col-xs-10">asdasdsad</div>
+                    </div>
+                    <div class="row">
+                        <div class="col-xs-2">4</div>
+                        <div class="col-xs-10">asdasdsad</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+-->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- <div class="row" ng-show="segment.id == 1 && topic.id == 1">
+    <div class="col-xs-12 text-center"><h4>Autores</h4></div>
+</div>
+<div class="row" ng-show="segment.id == 1 && topic.id == 1">
+    <div class="col-xs-12">
+        <div class="row">
+            <div class="col-xs-1">1</div>
+            <div class="col-xs-6">Lope de Vega</div>
+        </div>
+        <div class="row">
+            <div class="col-xs-1">2</div>
+            <div class="col-xs-6">Gloria Fuentes</div>
+        </div>
+        <div class="row">
+            <div class="col-xs-1">3</div>
+            <div class="col-xs-6">Antonio Machado</div>
+        </div>
+        <div class="row">
+            <div class="col-xs-1">4</div>
+            <div class="col-xs-6">Beatriz Chiabrera</div>
+        </div>
+        <div class="row">
+            <div class="col-xs-1">5</div>
+            <div class="col-xs-6">Humberto Zarrilli</div>
+        </div>
+    </div>
+</div>
+<div class="row" ng-show="segment.id == 1 && topic.id == 2">
+    <div class="col-xs-12 text-center"><h4>Autores</h4></div>
+</div>
+<div class="row" ng-show="segment.id == 1 && topic.id == 2">
+    <div class="col-xs-12">
+        <div class="row">
+            <div class="col-xs-1">1</div>
+            <div class="col-xs-6">Vladimir Nabokov</div>
+        </div>
+        <div class="row">
+            <div class="col-xs-1">2</div>
+            <div class="col-xs-6">F. Scott Fitzgerald</div>
+        </div>
+        <div class="row">
+            <div class="col-xs-1">3</div>
+            <div class="col-xs-6">Marcel Proust</div>
+        </div>
+        <div class="row">
+            <div class="col-xs-1">4</div>
+            <div class="col-xs-6">William Faulkner</div>
+        </div>
+        <div class="row">
+            <div class="col-xs-1">5</div>
+            <div class="col-xs-6">Virginia Woolf</div>
+        </div>
+    </div>
+</div>
+<div class="row" ng-show="segment.id == 1 && topic.id == 3">
+    <div class="col-xs-12 text-center"><h4>Autores</h4></div>
+</div>
+<div class="row" ng-show="segment.id == 1 && topic.id == 3">
+    <div class="col-xs-12">
+        <div class="row">
+            <div class="col-xs-1">1</div>
+            <div class="col-xs-6">Jorge Luis Borges</div>
+        </div>
+        <div class="row">
+            <div class="col-xs-1">2</div>
+            <div class="col-xs-6">Mario Vargas Llosa</div>
+        </div>
+        <div class="row">
+            <div class="col-xs-1">3</div>
+            <div class="col-xs-6">Julio Cortazar</div>
+        </div>
+        <div class="row">
+            <div class="col-xs-1">4</div>
+            <div class="col-xs-6">Pablo Neruda</div>
+        </div>
+        <div class="row">
+            <div class="col-xs-1">5</div>
+            <div class="col-xs-6">Gabriel Garcia Marquez</div>
+        </div>
+    </div>
+</div>
+
+
+
+
+
+
+
+
+<div class="row" ng-show="segment.id == 2 && topic.id == 1">
+    <div class="col-xs-12 text-center"><h4>Autores</h4></div>
+</div>
+<div class="row" ng-show="segment.id == 2 && topic.id == 1">
+    <div class="col-xs-12">
+        <div class="row">
+            <div class="col-xs-1">1</div>
+            <div class="col-xs-6">Lope de Vega</div>
+        </div>
+        <div class="row">
+            <div class="col-xs-1">2</div>
+            <div class="col-xs-6">Gloria Fuentes</div>
+        </div>
+        <div class="row">
+            <div class="col-xs-1">3</div>
+            <div class="col-xs-6">Antonio Machado</div>
+        </div>
+        <div class="row">
+            <div class="col-xs-1">4</div>
+            <div class="col-xs-6">Beatriz Chiabrera</div>
+        </div>
+        <div class="row">
+            <div class="col-xs-1">5</div>
+            <div class="col-xs-6">Humberto Zarrilli</div>
+        </div>
+    </div>
+</div>
+<div class="row" ng-show="segment.id == 2 && topic.id == 2">
+    <div class="col-xs-12 text-center"><h4>Autores</h4></div>
+</div>
+<div class="row" ng-show="segment.id == 2 && topic.id == 2">
+    <div class="col-xs-12">
+        <div class="row">
+            <div class="col-xs-1">1</div>
+            <div class="col-xs-6">Vladimir Nabokov</div>
+        </div>
+        <div class="row">
+            <div class="col-xs-1">2</div>
+            <div class="col-xs-6">F. Scott Fitzgerald</div>
+        </div>
+        <div class="row">
+            <div class="col-xs-1">3</div>
+            <div class="col-xs-6">Marcel Proust</div>
+        </div>
+        <div class="row">
+            <div class="col-xs-1">4</div>
+            <div class="col-xs-6">William Faulkner</div>
+        </div>
+        <div class="row">
+            <div class="col-xs-1">5</div>
+            <div class="col-xs-6">Virginia Woolf</div>
+        </div>
+    </div>
+</div>
+<div class="row" ng-show="segment.id == 2 && topic.id == 3">
+    <div class="col-xs-12 text-center"><h4>Autores</h4></div>
+</div>
+<div class="row" ng-show="segment.id == 2 && topic.id == 3">
+    <div class="col-xs-12">
+        <div class="row">
+            <div class="col-xs-1">1</div>
+            <div class="col-xs-6">Jorge Luis Borges</div>
+        </div>
+        <div class="row">
+            <div class="col-xs-1">2</div>
+            <div class="col-xs-6">Mario Vargas Llosa</div>
+        </div>
+        <div class="row">
+            <div class="col-xs-1">3</div>
+            <div class="col-xs-6">Julio Cortazar</div>
+        </div>
+        <div class="row">
+            <div class="col-xs-1">4</div>
+            <div class="col-xs-6">Pablo Neruda</div>
+        </div>
+        <div class="row">
+            <div class="col-xs-1">5</div>
+            <div class="col-xs-6">Gabriel Garcia Marquez</div>
+        </div>
+    </div>
+</div>
+-->
